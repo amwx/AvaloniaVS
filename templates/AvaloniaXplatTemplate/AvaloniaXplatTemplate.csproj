@@ -54,13 +54,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AvaloniaTest.NetCore\Program.cs" />
+    <Compile Include="AvaloniaTest.Web\App.razor.cs" />
+    <Compile Include="AvaloniaTest.Web\Program.cs" />
+    <Compile Include="AvaloniaTest\ViewModels\MainViewModel.cs" />
+    <Compile Include="AvaloniaTest\ViewModels\ViewModelBase.cs" />
+    <Compile Include="AvaloniaTest\Views\MainView.axaml.cs" />
+    <Compile Include="AvaloniaTest\Views\MainWindow.axaml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <VSTemplate Include="AvaloniaXplatTemplate.vstemplate" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="AvaloniaTest.sln" />
+    <Content Include="AvaloniaTest.Web\Shared\MainLayout.razor.css" />
+    <Content Include="AvaloniaTest.Web\wwwroot\css\app.css" />
+    <Content Include="AvaloniaTest.Web\wwwroot\favicon.ico" />
+    <Content Include="AvaloniaTest.Web\wwwroot\index.html" />
+    <Content Include="AvaloniaTest.Web\wwwroot\js\app.js" />
+    <Content Include="AvaloniaTest.Web\wwwroot\Logo.svg" />
+    <Content Include="AvaloniaTest\Assets\avalonia-logo.ico" />
     <Content Include="AvaloniaXplatTemplate.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AvaloniaTest.NetCore\AvaloniaTest.NetCore.csproj" />
+    <None Include="AvaloniaTest.Web\App.razor" />
+    <None Include="AvaloniaTest.Web\AvaloniaTest.Web.csproj" />
+    <None Include="AvaloniaTest.Web\Pages\Index.razor" />
+    <None Include="AvaloniaTest.Web\Properties\launchSettings.json" />
+    <None Include="AvaloniaTest.Web\Shared\MainLayout.razor" />
+    <None Include="AvaloniaTest.Web\_Imports.razor" />
+    <None Include="AvaloniaTest\Views\MainView.axaml" />
+    <None Include="AvaloniaTest\Views\MainWindow.axaml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
